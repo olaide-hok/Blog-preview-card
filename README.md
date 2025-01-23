@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [Link](https://olaide-hok.github.io/Blog-preview-card/)
 
 ### Built with
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
--   Website - [Add your name here](https://habeeb-dev.netlify.app/)
+-   Website - [Habeeb Kareem](https://habeeb-dev.netlify.app/)
 -   Frontend Mentor - [@olaide-hok](https://www.frontendmentor.io/profile/olaide-hok)
