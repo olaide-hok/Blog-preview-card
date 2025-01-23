@@ -1,0 +1,117 @@
+:root {
+    --yellow: #f4d04e;
+    --gray-950: #111111;
+    --gray-500: #6b6b6b;
+
+    --text-preset-1: 24px;
+    --text-preset-2: 16px;
+    --text-preset-3: 14px;
+
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+@font-face {
+    font-family: figtreefont;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+h2,
+p,
+span {
+    font-family: figtreefont;
+}
+
+body {
+    background-color: var(--yellow);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.card {
+    padding: var(--spacing-300);
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+    max-width: 327px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 5px 5px var(--gray-950);
+}
+
+.card .illustration {
+    border-radius: 10px;
+    width: 279px;
+}
+
+.card section.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 12px;
+}
+
+.card section.content .category {
+    background-color: var(--yellow);
+    border-radius: 4px;
+    color: var(--gray-950);
+    padding: 4px 12px;
+    font-weight: 700;
+}
+
+.card section.content .date {
+    color: var(--gray-950);
+    font-size: var(--text-preset-3);
+}
+
+.card section.content .title {
+    font-size: var(--text-preset-1);
+    color: var(--gray-950);
+}
+
+.card section.content .title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card section.content .desc {
+    color: var(--gray-500);
+    font-size: var(--text-preset-2);
+}
+
+.card footer.author {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-100);
+    height: 24px;
+}
+
+.card footer.author img {
+    width: 32px;
+    height: 32px;
+}
+
+.card footer.author span {
+    color: var(--slate-500);
+    font-size: var(--text-preset-3);
+    font-weight: bold;
+}
+
+@media (min-width: 376px) {
+    .card {
+        max-width: 384px;
+    }
+    .card .illustration {
+        width: 100%;
+    }
+}
